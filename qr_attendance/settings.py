@@ -7,11 +7,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-d79iok)op%p6xb
 
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'  # ✅ Enable debug only in development
 
-ALLOWED_HOSTS = [
-    'qr-attendance-hxvv.onrender.com',
-    'localhost',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = ['qr-attendance-hxvv.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',

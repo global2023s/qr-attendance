@@ -20,7 +20,7 @@ from .decorators import login_required_or_pin_check
 @api_view(['POST'])
 def create_attendance_qr(request):
     session = AttendanceSession.objects.create()
-    session_url = f"https://7e0c-223-236-131-130.ngrok-free.app/attendance/{session.session_id}"
+    url = "https://qr-attendance-hxvv.onrender.com/faculty-login/"
 
     qr = qrcode.make(session_url)
     buffer = io.BytesIO()

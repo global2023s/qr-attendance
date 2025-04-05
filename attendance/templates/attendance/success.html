@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eafaea;
+            padding: 30px;
+            text-align: center;
+        }
+        .message-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <h2>Attendance marked successfully!</h2>
+        <p>Thank you, {{ name }}. Your {{ action }} time has been recorded.</p>
+        <p><strong>Time:</strong> {{ time }}</p>
+    </div>
+
+</body>
+</html>
